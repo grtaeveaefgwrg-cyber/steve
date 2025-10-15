@@ -59,7 +59,7 @@ const Header: React.FC = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // 5 seconds interval
+    }, 6000); // 6 seconds interval
 
     return () => clearInterval(intervalId);
   }, []);
