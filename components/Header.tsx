@@ -41,10 +41,9 @@ const Header: React.FC = () => {
   };
   
   const images = [
-    'https://i.postimg.cc/BbvVSGC9/download.jpg',
-    'https://i.postimg.cc/nhVCnRyS/images.jpg',
-    'https://i.postimg.cc/nhVCnRyS/images.jpg',
-    'https://i.postimg.cc/YqrpF4bb/images-1.jpg'
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTooZ55ezy-JVHJoXbuBtrhq6911tUCcyJ7cA&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUj7AqdLI-KrP6-X2YKo9GM65OfAQkmW3kiQ&s',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo5I0VHdg9-wXzpkgeZtty2nVucJa8oAwQbA&s'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
