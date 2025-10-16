@@ -38,21 +38,21 @@ const Countdown: React.FC = () => {
   const timerKeys = Object.keys(timeLeft) as Array<keyof TimeLeft>;
 
   return (
-    <section className="py-20 px-5 bg-gray-900">
+    <section className="py-12 px-5 bg-gray-900">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-yellow-400 mb-8">
           ⏰ Challenges Close In:
         </h2>
-        <div className="flex justify-center items-center space-x-4 md:space-x-8">
+        <div className="flex justify-center items-center space-x-2 sm:space-x-4 md:space-x-8">
           {timerKeys.length > 0 ? timerKeys.map((key, index) => (
             <React.Fragment key={key}>
               <div className="flex flex-col items-center">
-                <span className="text-4xl md:text-6xl font-bold">
+                <span className="text-3xl sm:text-4xl md:text-6xl font-bold">
                   {String(timeLeft[key]).padStart(2, '0')}
                 </span>
                 <span className="text-sm uppercase text-gray-400">{key}</span>
               </div>
-              {index < timerKeys.length - 1 && <span className="text-4xl md:text-6xl font-light text-gray-600">:</span>}
+              {index < timerKeys.length - 1 && <span className="text-3xl sm:text-4xl md:text-6xl font-light text-gray-600">:</span>}
             </React.Fragment>
           )) : 
           <span className="text-3xl font-bold text-red-500">Challenges Closed</span>}

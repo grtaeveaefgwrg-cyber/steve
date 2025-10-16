@@ -45,7 +45,7 @@ const FaqItem: React.FC<{ faq: { question: string, answer: string } }> = ({ faq 
 
 const FAQ: React.FC = () => {
   return (
-    <section className="py-20 px-5 bg-gray-900">
+    <section className="py-12 px-5 bg-gray-900">
       <div className="container mx-auto max-w-2xl">
         <h2 className="text-3xl font-bold text-yellow-400 mb-8">
           Frequently Asked Questions

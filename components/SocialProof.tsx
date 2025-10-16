@@ -13,9 +13,9 @@ const SocialProof: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-12 bg-gray-900">
-      <div className="container mx-auto text-center">
-        <p className="text-2xl md:text-3xl font-semibold text-white animate-pulse">
+    <section className="py-6 bg-gray-900">
+      <div className="container mx-auto text-center px-4">
+        <p className="text-xl md:text-3xl font-semibold text-white animate-pulse">
           🎉 <span className="text-yellow-400 font-bold">{count.toLocaleString()}</span> people have already joined! 🎉
         </p>
       </div>

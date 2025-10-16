@@ -40,11 +40,11 @@ const App: React.FC = () => {
       <SocialProof />
       <main>
         <Prizes />
+        <Share />
         <Countdown />
         <WhyWeDoThis />
         <Testimonials />
         <Register isUnlocked={isGiveawayUnlocked} onLockClick={handleOpenLocker} />
-        <Share />
         <Leaderboard />
         <FAQ />
       </main>

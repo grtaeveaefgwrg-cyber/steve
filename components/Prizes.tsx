@@ -18,9 +18,9 @@ const Prizes: React.FC = () => {
   const [isSharePopupOpen, setIsSharePopupOpen] = useState(false);
 
   return (
-    <section className="bg-gray-900 py-16 px-5 text-center" id="prizes">
+    <section className="bg-gray-900 py-12 px-5 text-center" id="prizes">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-12 drop-shadow-lg">
+        <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-8 drop-shadow-lg">
           Exclusive Rewards
         </h2>
         <div className="flex flex-wrap justify-center gap-8 items-stretch">
