@@ -14,12 +14,6 @@ const testimonialData = [
     location: "Canada",
     comment: "Never thought I'd win anything. This made my entire year. So grateful for this opportunity.",
   },
-  {
-    imgSrc: "https://i.postimg.cc/Xv4GJYCs/images.jpg",
-    name: "David K.",
-    location: "UK",
-    comment: "The whole process was so easy and legitimate. Just got my prize today. This is the real deal!",
-  },
 ];
 
 const Testimonials: React.FC = () => {

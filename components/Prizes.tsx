@@ -12,22 +12,6 @@ const prizeData = [
     buttonLink: "https://t.me/cryptominingao",
     isCentered: true,
   },
-  {
-    imgSrc: "https://i.postimg.cc/Qd5M3Wc7/download-1.png",
-    imgAlt: "Signed T-shirt",
-    title: "Share to Win T-Shirts",
-    description: "Share with friends for more entries and a higher chance to win signed T-shirts.",
-    isCentered: true,
-  },
-  {
-    imgSrc: "https://i.postimg.cc/J0k2WKT2/download-2.png",
-    imgAlt: "$10,000 Cash Prize",
-    title: "$10,000 Grand Prize",
-    description: "The grand prize winner will receive a whopping $10,000 in cash.",
-    buttonText: "Enter Now",
-    buttonLink: "#register",
-    isCentered: true,
-  },
 ];
 
 const Prizes: React.FC = () => {
