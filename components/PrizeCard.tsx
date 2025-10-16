@@ -22,6 +22,16 @@ const PrizeCard: React.FC<PrizeCardProps> = ({ imgSrc, imgAlt, title, descriptio
 
   const isClickable = !!onClick;
 
+  const handleButtonClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // Stop the card's onClick from firing if it exists
+    e.stopPropagation();
+    // Smooth scroll for internal links
+    if (buttonLink && buttonLink.startsWith('#')) {
+      e.preventDefault();
+      document.querySelector(buttonLink)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div 
       className={`bg-[#2a2a2a] rounded-xl w-full max-w-[280px] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.4)] transition-transform duration-300 hover:-translate-y-1.5 hover:shadow-yellow-400/20 flex flex-col ${isClickable ? 'cursor-pointer' : ''}`}
@@ -43,10 +53,10 @@ const PrizeCard: React.FC<PrizeCardProps> = ({ imgSrc, imgAlt, title, descriptio
           <div className="mt-auto pt-4 mb-[15px]">
             <a
               href={buttonLink}
-              target="_blank"
+              target={buttonLink.startsWith('#') ? '_self' : '_blank'}
               rel="noopener noreferrer"
               className="inline-block bg-yellow-400 text-black py-2.5 px-5 rounded-lg font-bold transition-colors duration-300 hover:bg-[#e6c200]"
-              onClick={(e) => e.stopPropagation()}
+              onClick={handleButtonClick}
             >
               {buttonText}
             </a>

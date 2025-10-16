@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const backgroundImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKJNc38KkkdV_oTCJSAF3lb0fYWuasZ23K6g&s';
+const backgroundImage = 'https://i.postimg.cc/4dxvs8nD/download-13.jpg';
 
 const Header: React.FC = () => {
   const headlines = [
